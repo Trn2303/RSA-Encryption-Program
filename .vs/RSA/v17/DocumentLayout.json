@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Truct\\OneDrive\\M\u00E1y t\u00EDnh\\ATBM\\RSA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4488D887-0A6B-4D36-A4C0-64BE3BAC9599}|RSA\\RSA.csproj|c:\\users\\truct\\onedrive\\m\u00E1y t\u00EDnh\\atbm\\rsa\\rsa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4488D887-0A6B-4D36-A4C0-64BE3BAC9599}|RSA\\RSA.csproj|solutionrelative:rsa\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4488D887-0A6B-4D36-A4C0-64BE3BAC9599}|RSA\\RSA.csproj|C:\\Users\\Truct\\OneDrive\\M\u00E1y t\u00EDnh\\ATBM\\RSA\\rsa\\bigintegerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4488D887-0A6B-4D36-A4C0-64BE3BAC9599}|RSA\\RSA.csproj|solutionrelative:rsa\\bigintegerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BigIntegerExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Truct\\OneDrive\\M\u00E1y t\u00EDnh\\ATBM\\RSA\\RSA\\BigIntegerExtensions.cs",
+              "RelativeDocumentMoniker": "RSA\\BigIntegerExtensions.cs",
+              "ToolTip": "C:\\Users\\Truct\\OneDrive\\M\u00E1y t\u00EDnh\\ATBM\\RSA\\RSA\\BigIntegerExtensions.cs",
+              "RelativeToolTip": "RSA\\BigIntegerExtensions.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAA+wAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T12:19:02.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Truct\\OneDrive\\M\u00E1y t\u00EDnh\\ATBM\\RSA\\RSA\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "RSA\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Truct\\OneDrive\\M\u00E1y t\u00EDnh\\ATBM\\RSA\\RSA\\MainWindow.xaml.cs",
+              "RelativeToolTip": "RSA\\MainWindow.xaml.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAYwGMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-22T11:12:06.072Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

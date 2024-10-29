@@ -1,0 +1,56 @@
+﻿<Window x:Class="RSA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RSA"
+        mc:Ignorable="d"
+        Title="Mã hóa RSA" Height="590" Width="1200" WindowStartupLocation="CenterScreen">
+    <Grid Background="#faf4fa">
+        <Border BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Left" Height="507" Margin="16,5,0,0" VerticalAlignment="Top" Width="467"/>
+        <Border BorderBrush="Gainsboro" BorderThickness="1" HorizontalAlignment="Left" Height="507" Margin="486,5,0,0" VerticalAlignment="Top" Width="346"/>
+        <Border BorderBrush="Gainsboro" BorderThickness="1" Height="507" Margin="835,5,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="346"/>
+        <Label Content="Tạo khóa " FontSize="18" HorizontalAlignment="Left" Margin="23,10,0,0" VerticalAlignment="Top"/>
+        <RadioButton Name="rd_tudong" Content="Tạo khóa tự động" HorizontalAlignment="Left" Margin="51,57,0,0" VerticalAlignment="Top" Checked="rd_tudongCheck"/>
+        <RadioButton Name="rd_tuychon" Content="Tạo khóa tùy chọn" HorizontalAlignment="Left" Margin="241,57,0,0" VerticalAlignment="Top" Checked="rd_tuychonCheck"/>
+        <Label Content="Số nguyên tố p = " HorizontalAlignment="Left" Margin="125,81,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Số nguyên tố q = " HorizontalAlignment="Left" Margin="125,114,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Hàm số Euler: Ф(n) = (p - 1)*(q - 1) =" HorizontalAlignment="Left" Margin="23,151,0,0" VerticalAlignment="Top" Width="210"/>
+        <Label Content="Khóa công khai: {e, n}" HorizontalAlignment="Left" Margin="23,227,0,0" VerticalAlignment="Top" Width="164"/>
+        <Label Content="e =" HorizontalAlignment="Left" Margin="121,251,0,0" VerticalAlignment="Top"/>
+        <Label Content="n =" HorizontalAlignment="Left" Margin="121,293,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn_NhapKhoaPub" Content="File khóa công khai" Height="26" HorizontalAlignment="Left" Margin="187,333,0,0" VerticalAlignment="Top" Width="121" Click="btn_NhapKhoaPub_Click" />
+        <Button Name="btn_LuuKhoaPub" Content="Lưu khóa công khai" Height="26" HorizontalAlignment="Left" Margin="339,333,0,0" VerticalAlignment="Top" Width="121" Click="btn_LuuKhoaPub_Click" />
+        <Label Content="Khóa bí mật: {d, n}" HorizontalAlignment="Left" Margin="23,367,0,0" VerticalAlignment="Top"/>
+        <Label Content="d =" HorizontalAlignment="Left" Margin="119,394,0,0" VerticalAlignment="Top"/>
+        <Label Content="n =" HorizontalAlignment="Left" Margin="120,435,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn_NhapKhoaS" Content="File khóa bí mật" Height="26" HorizontalAlignment="Left" Margin="187,476,0,0" VerticalAlignment="Top" Width="121" Click="btn_NhapKhoaS_Click"/>
+        <Button Name="btn_LuuKhoaS" Content="Lưu khóa bí mật" Height="26" HorizontalAlignment="Left" Margin="339,476,0,0" VerticalAlignment="Top" Width="121" Click="btn_LuuKhoaS_Click" />
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="240,84,0,0" TextWrapping="Wrap" Name="soP" VerticalAlignment="Top" Width="220"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="240,117,0,0" TextWrapping="Wrap" Name="soQ" VerticalAlignment="Top" Width="220"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="240,154,0,0" TextWrapping="Wrap" Name="soPhiN" VerticalAlignment="Top" Width="220"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,254,0,0" TextWrapping="Wrap" Name="soE" VerticalAlignment="Top" Width="300"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="160,296,0,0" TextWrapping="Wrap" Name="soN" VerticalAlignment="Top" Width="300"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="159,397,0,0" TextWrapping="Wrap" Name="soD" VerticalAlignment="Top" Width="300"/>
+        <TextBox HorizontalAlignment="Left" Height="23" Margin="159,438,0,0" TextWrapping="Wrap" Name="soN2" VerticalAlignment="Top" Width="300" RenderTransformOrigin="0.541,1.53"/>
+        <Button Name="btn_TaoKhoa" Content="Tạo khóa" Height="26" HorizontalAlignment="Left" Margin="339,191,0,0" VerticalAlignment="Top" Width="121" Click="btn_TaoKhoa_Click"/>
+        <Label Content="Mã hóa" FontSize="18" HorizontalAlignment="Left" Margin="503,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Bản rõ:" HorizontalAlignment="Left" Margin="503,52,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="150" Margin="503,83,0,0" TextWrapping="Wrap" Name="banRo" VerticalAlignment="Top" Width="311"/>
+        <Button Name="btn_NhapRo" Content="File bản rõ" Height="26" HorizontalAlignment="Left" Margin="505,247,0,0" VerticalAlignment="Top" Width="88" RenderTransformOrigin="0.84,0.432" SnapsToDevicePixels="True" Click="btn_NhapRo_Click" />
+        <Button Name="btn_MaHoa" Content="Thực hiện mã hóa" Height="26" HorizontalAlignment="Left" Margin="683,247,0,0" VerticalAlignment="Top" Width="130" RenderTransformOrigin="0.5,0.5" SnapsToDevicePixels="True" Click="btn_MaHoa_Click"/>
+        <Label Content="Bản mã hóa:" HorizontalAlignment="Left" Margin="505,284,0,0" VerticalAlignment="Top"/>
+        <TextBox HorizontalAlignment="Left" Height="150" Margin="503,317,0,0" TextWrapping="Wrap" Name="banMaHoa" VerticalAlignment="Top" Width="311"/>
+        <Button Name="btn_LuuMa" Content="Lưu bản mã" Height="26" HorizontalAlignment="Left" Margin="734,476,0,0" VerticalAlignment="Top" Width="80" Click="btn_LuuMa_Click" />
+        <Label Content="Giải mã" FontSize="18" HorizontalAlignment="Left" Margin="850,10,0,0" VerticalAlignment="Top"/>
+        <TextBox Height="150" Margin="850,83,0,0" TextWrapping="Wrap" Name="banMaGuiDen" VerticalAlignment="Top" HorizontalAlignment="Left" Width="311"/>
+        <TextBox Height="150" Margin="851,315,0,0" TextWrapping="Wrap" Name="banGiaiMa" VerticalAlignment="Top" HorizontalAlignment="Left" Width="311"/>
+        <Label Content="Bản mã:" HorizontalAlignment="Left" Margin="850,52,0,0" VerticalAlignment="Top"/>
+        <Label Content="Giải mã nhận được bản rõ" HorizontalAlignment="Left" Margin="852,284,0,0" VerticalAlignment="Top"/>
+        <Button Name="btn_GiaiMa" Content="Thực hiện giải mã" Height="26" Margin="1031,247,0,0" VerticalAlignment="Top" Click="btn_GiaiMa_Click" HorizontalAlignment="Left" Width="130" />
+        <Button Name="btn_NhapMa" Content="File bản mã" Height="26" Margin="852,247,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="88" Click="btn_NhapMa_Click" />
+        <Button Content="Mã hóa bản rõ mới" Name="btn_MaHoaMoi" Margin="806,524,0,0" VerticalAlignment="Top" Height="26" Click="btn_MaHoaMoi_Click" HorizontalAlignment="Left" Width="158"/>
+        <Button Content="Thoát" Background="DimGray" Foreground="White" Name="btn_close" Margin="1103,524,0,0" VerticalAlignment="Top" Height="26" Click="btn_close_Click" HorizontalAlignment="Left" Width="76" />
+        <Button Name="btn_reset" Background="Red" Foreground="White" Content="Tạo mới" Margin="995,524,0,0" VerticalAlignment="Top" Height="26" RenderTransformOrigin="0.5,0.5" BorderThickness="1" Click="btn_reset_Click" HorizontalAlignment="Left" Width="80"/>
+    </Grid>
+</Window>
